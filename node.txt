@@ -1,0 +1,66 @@
+✅ Étape 1 : Vérifier si Node.js est installé
+
+Ouvre l’explorateur de fichiers.
+
+Va dans :
+
+C:\Program Files\nodejs\
+
+
+Regarde si tu vois un fichier node.exe à cet endroit.
+
+Si tu ne trouves pas ce dossier, passe à l’étape suivante (installation).
+
+Si tu vois node.exe, alors le problème vient du PATH (voir Étape 3).
+
+✅ Étape 2 : Installer Node.js
+
+Va sur le site officiel : https://nodejs.org
+
+Télécharge la version LTS (Long Term Support) — la plus stable.
+
+Lance l’installation :
+
+Coche la case "Add to PATH" (ajouter à la variable d’environnement).
+
+Termine l’installation.
+
+Ferme PowerShell puis rouvre-le.
+
+Tape :
+
+node --version
+
+
+ou
+
+node -v
+
+
+➜ Tu devrais voir un numéro de version comme v22.9.0.
+
+✅ Étape 3 : (si Node est installé mais non reconnu)
+
+Si Node.js est déjà installé, mais toujours pas reconnu :
+
+Appuie sur Win + R, tape :
+
+sysdm.cpl
+
+
+Onglet "Avancé" → clique sur "Variables d’environnement".
+
+Dans la section Variables système, cherche la variable Path.
+
+Clique sur Modifier, puis Nouveau.
+
+Ajoute le chemin suivant (selon ton installation) :
+
+C:\Program Files\nodejs\
+
+
+Clique sur OK partout pour valider.
+
+Redémarre ton terminal et réessaie :
+
+node --version
